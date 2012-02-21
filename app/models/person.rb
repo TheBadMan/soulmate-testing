@@ -3,12 +3,11 @@ class Person < ActiveRecord::Base
 
   def load_into_soulmate
     loader=Soulmate::Loader.new("person")
-    loader.add("term" => name, "id" => id )
+    loader.add("term" => name, "id" => id , "type" => "sexy")
   end
 
   def self.search(term)
     matches = Soulmate::Matcher.new('person').matches_for_term(term)
-    print matches
     matches.collect {|match| {"id" => match["id"], "label" => match["term"], "value" => match["term"] } }
   end
 

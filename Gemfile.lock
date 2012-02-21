@@ -95,5 +95,6 @@ PLATFORMS
 DEPENDENCIES
   faker
   mysql2
+  rack-contrib
   rails (= 3.0.7)
   soulmate

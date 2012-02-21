@@ -8,6 +8,8 @@ gem 'rails', '3.0.7'
 gem 'mysql2'
 gem 'faker'
 gem 'soulmate'
+gem 'rack-contrib'
+gem 'soulmate', :require => 'soulmate/server'
 
 
 # Use unicorn as the web server
